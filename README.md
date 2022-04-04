@@ -22,7 +22,7 @@ use in terminal the following command
 * pug
 
 ### Structure:
-However there is one custom folder to organise database structure from MongoDB Atlas. The rest remained from the recommendation part. 
+There is one custom folder to organise database structure from MongoDB Atlas namely 'model'. The rest remained from the recommendation part. 
 
 ### Hosted on Heroku
 https://web-tech-cw2-00011776.herokuapp.com/games
