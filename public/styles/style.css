@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  color: #dbe7e4;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+img {
+  margin: 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #dbe7e4;
+  font-weight: 700;
+}
+
+.nav a:hover {
+}
+
+.games {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.edit {
+  margin-right: 10px;
+}
+
+.delete {
+}
+
+.options {
+  padding: 1rem 0;
+}
+
+.options a {
+  background: #a3c4f3;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}
+
+.detail p {
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+
+.detail {
+  max-width: 300px;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 410px;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-input input,
+.form-input textarea {
+  padding: 10px 20px;
+  resize: none;
+  width: 300px;
+}
+
+#update-btn,
+#create-btn {
+  margin: 0 auto;
+  display: flex;
+  padding: 15px 25px;
+  color: #000;
+  background: #a3c4f3;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.no-games {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-games p {
+  margin-right: 15px;
+}
+
+.no-games a {
+  display: flex;
+  padding: 15px 25px;
+  color: #000;
+  background: #a3c4f3;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+footer p {
+  padding: 30px;
+  text-align: center;
+}
