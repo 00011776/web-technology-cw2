@@ -1,12 +1,8 @@
 {
   "name": "webtechcw2",
-  "author": "ID_00011776",
   "version": "1.0.0",
+  "description": "app for fullfilling web tech cw2",
   "main": "index.js",
-  "license": "ISC",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
   "dependencies": {
     "axios": "^0.26.1",
     "cors": "^2.8.5",
@@ -16,5 +12,11 @@
     "nodemon": "^2.0.15",
     "prettier": "^2.6.1",
     "pug": "^3.0.2"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "ID_00011776",
+  "license": "ISC"
 }
