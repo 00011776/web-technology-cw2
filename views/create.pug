@@ -1,0 +1,33 @@
+extends layout.pug
+
+block content
+  section.create 
+    h1 Add new Game to the Club
+    form(method='POST', action='/backend/games')
+      .form-input
+        label(for='title') Title
+        input(
+          type='text',
+          name='title',
+          placeholder='Title of the game',
+          required
+        )  
+      .form-input
+        label(for='description') Description
+        input(
+          type='text',
+          name='description',
+          placeholder='Game description',
+          required
+          )
+      .form-input
+        label(for='price') Price
+        input(
+          type='number',
+          name='price',
+          placeholder='150',
+          min='0',
+          max="10000",
+          required
+        ) 
+      input#create-btn(type='submit', value='Create')

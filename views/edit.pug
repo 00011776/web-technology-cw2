@@ -1,0 +1,35 @@
+extends layout.pug
+
+block content
+  if (game)
+    h1 Update game
+    form(action=`/backend/games/${game._id}`, method='POST')
+      .form-input
+        label(for='title') Title
+        input(
+          type='text',
+          name='title',
+          placeholder='Title of the game',
+          required
+        ) 
+      .form-input
+        label(for='description') Description
+        input(
+          type='text',
+          name='description',
+          placeholder='Game description',
+          required
+          )
+      .form-input
+        label(for='price') Price
+        input(
+          type='number',
+          name='price',
+          placeholder='150',
+          min="0",
+          max="10000",
+          required
+        ) 
+      input#update-btn(type='submit', value='Update')
+  else
+    h3 Something went wrong

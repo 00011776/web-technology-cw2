@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+  h1.page-title Gaming Club - Pay as you Play
+
+  if (games.length)
+    ul.games 
+      each game in games
+        li.game 
+          img.img( src=game.image alt="game image")
+          div.detail
+            p Games: #{ game.title }
+            p Description: #{ game.description }
+            p Price: #{ game.price ? '$' + game.price : 'Free' }
+            .options 
+              a.edit(href='/games/update/' + game._id) Edit
+              a#delete-btn.delete(href='/backend/games/delete/' + game._id) Delete
+  else
+    .no-games
+      p You don't have any games yet.
+      a.nav-item.create(href='/games/create') Add Game
