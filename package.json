@@ -2,10 +2,10 @@
   "name": "webtechcw2",
   "author": "ID_00011776",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "axios": "^0.26.1",
