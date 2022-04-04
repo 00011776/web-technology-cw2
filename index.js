@@ -22,7 +22,7 @@ app.use("*", (req, res) => {
 });
 
 const mongodb = process.env.mongodb;
-const port = process.env.port;
+const port = process.env.PORT;
 
 app.listen(port, async () => {
   console.log(`Server on port ${port}`);
